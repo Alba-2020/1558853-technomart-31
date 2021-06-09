@@ -281,19 +281,21 @@ header {
 }
 
 .goods-item {
-    border: 1px solid;
-    border-color: var(--light-grey);
-    font-family: 'PT Sans';
-    font-size: 18px;
+    border: 1px solid var(--light-grey);
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     line-height: 20px;
     color: var(--basic-black);
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
 }
 
 .old-price {
     font-size: 17px;
     line-height: 18px;
     color: var(--price-color);
+    text-decoration: line-through;
 }
 
 .new-price {
