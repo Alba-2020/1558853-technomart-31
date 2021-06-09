@@ -20,7 +20,7 @@
     --light-grey: #EAEAEA;
     --nav-color: #32425C;
     --beige: #F9F5F0;
-    --prise-color: #A9A9A9;
+    --price-color: #A9A9A9;
 }
 
 body {
@@ -283,7 +283,24 @@ header {
 .goods-item {
     border: 1px solid;
     border-color: var(--light-grey);
+    font-family: 'PT Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--basic-black);
 }
 
+.old-price {
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--price-color);
+}
 
+.new-price {
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--white);
+    font-weight: 700;
+    background-color: var(--basic-red);
+}
 
