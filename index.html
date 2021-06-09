@@ -9,122 +9,149 @@
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <div>
-      <a href="index.html">
+    <div class="top-nav">
+      <a class="logo" href="index.html">
         Техномарт
       </a>
-      <form method="post" action="#">
-        <label for="textField"><img src="img/icon/search.svg" width="17" height="17" alt="">Поиск</label>
+      <form method="post" action="#" class="search-form">
+        <label for="textField">Поиск</label>
         <input type="text" name="text" id="textField">
       </form>
 
-      <a href="#">
-        <img src="img/icon/bookmark.svg" width="14" height="16" alt="">Закладки
+      <a class="bookmark" href="#">
+        Закладки
       </a>
-      <a href="#">
-        <img src="img/icon/smalltrolley.svg" width="15" height="15" alt="">Корзина
+      <a class="busket" href="#">
+        Корзина
       </a>
-      <a href="#">
+      <a class="checkout" href="#">
         Оформить заказ
       </a>
     </div>
     <div>
-      <p>Интернет-магазинстроительных материалови инструментов для ремонта</p>
-      <a href="tel:+78005558628"><img src="img/icon/phone.svg" width="19" height="19" alt="">+7 800 555-86-28</a>
-      <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
-      <a href="#"><img src="img/icon/login.svg" width="20" height="17" alt="">Войти</a>
-      <a href="#">Регистрация</a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="blank.html">Главная</a></li>
-        <li><a href="blank.html">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="blank.html">Новости</a></li>
-        <li><a href="blank.html">Спецпредложения</a></li>
-        <li><a href="blank.html">Доставка</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-    </nav>
+      <div>
+        <p class="shop-description">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
+        <div class="contacts-block">
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+        </div>
+
+        <div class="sign-block">
+          <a class="sign-in" href="#">Войти</a>
+          <a class="sign-up" href="#">Регистрация</a>
+        </div>
+      </div>
+
+      <nav class="container-nav">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Главная</a></li>
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </nav>
   </header>
   <main>
-    <section>
-      <div>
-        Материалы
-        <div>На любой вкус</div>
-        <img src="img/icon/bucket.svg" width="44" height="65" alt="">
+    <section class="features">
+      <div class="feature materials">
+        <div>
+          <div>Материалы</div>
+          <a class="features-button" href="blank.html">На любой вкус</a>
+        </div>
+        <i class="icon-bucket"></i>
       </div>
-      <div>
-        Инструмент
-        <div>На все случаи</div>
-        <img src="img/icon/drel.svg" width="75" height="61" alt="">
+      <div class="feature instruments">
+        <div>
+          <div>Инструмент</div>
+          <a class="features-button" href="blank.html">На все случаи</a>
+        </div>
+        <i class="icon-drel"></i>
       </div>
-      <div>
-        Техника
-        <div>Для стройки</div>
-        <img src="img/icon/tractor.svg" width="78" height="62" alt="">
+      <div class="feature technics">
+        <div>
+          <div>Техника</div>
+          <a class="features-button" href="blank.html">Для стройки</a>
+        </div>
+        <i class="icon-tractor"></i>
       </div>
-      <div>
+      <div class="slider">
         <div>
           Перфораторы
           <div>Настоящие мужские игрушки</div>
         </div>
         <img src="img/slider/perforator.jpg" width="620" height="266" alt="Перфораторы">
         <img src="img/icon/left.svg" width="22" height="40" alt="">
-        <a href="#">Открыть каталог</a>
+        <a class="slider-button" href="blank.html">Открыть каталог</a>
       </div>
-      <div>
-        Скидки 50%
-        <div>На 350 товаров</div>
-        <img src="img/icon/trolley.svg" width="59" height="72" alt="">
+      <div class="feature discounts">
+        <div>
+          <div> Скидки 50%</div>
+          <a class="features-button" href="blank.html">На 350 товаров</a>
+        </div>
+        <i class="icon-trolley"></i>
       </div>
-      <div>
-        Доставка
-        <div>Бесплатно</div>
-        <img src="img/icon/truck.svg" width="78" height="63" alt="">
+      <div class="feature delivery">
+        <div>
+          <div>Доставка</div>
+          <a class="features-button" href="blank.html">Бесплатно</a>
+        </div>
+        <i class="icon-truck"></i>
       </div>
     </section>
     <section>
-      <div>
+      <div class="section-header">
         <h2>Популярные товары:</h2>
         <a href="#">Все популярные товары</a>
       </div>
-      <ul>
+      <ul class="goods-list">
         <li>
-          <img src="img/goods/drel1.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 9000">
-          <div>Перфоратор BOSCHBFG 9000</div>
-          <div><s>32500 Р.</s></div>
-          <div>25500 Р.</div>
+          <a class="goods-item" href="blank.html">
+            <img src="img/goods/drel1.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 9000">
+            <div>Перфоратор BOSCHBFG 9000</div>
+            <div class="old-price"><s>32500 Р.</s></div>
+            <div class="new-price">25500 Р.</div>
+          </a>
         </li>
         <li>
-          <img src="img/goods/drel2.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 3000">
-          <div>Перфоратор BOSCHBFG 3000</div>
-          <div><s>22500 Р.</s></div>
-          <div>15500 Р.</div>
+          <a class="goods-item" href="blank.html">
+            <img src="img/goods/drel2.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 3000">
+            <div>Перфоратор BOSCHBFG 3000</div>
+            <div class="old-prise"><s>22500 Р.</s></div>
+            <div class="new-prise">15500 Р.</div>
+          </a>
         </li>
         <li>
-          <img src="img/goods/drel3.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 6000">
-          <div>Перфоратор BOSCHBFG 6000</div>
-          <div><s>30500 Р.</s></div>
-          <div>22500 Р.</div>
+          <a class="goods-item" href="blank.html">
+            <img src="img/goods/drel3.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 6000">
+            <div>Перфоратор BOSCHBFG 6000</div>
+            <div class="old-prise"><s>30500 Р.</s></div>
+            <div class="new-prise">22500 Р.</div>
+        </a>
         </li>
         <li>
-          <img src="img/goods/drel2.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 2000">
-          <div>Перфоратор BOSCHBFG 2000</div>
-          <div><s>22500 Р.</s></div>
-          <div>12500 Р.</div>
+          <a class="goods-item" href="blank.html">
+            <img src="img/goods/drel2.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 2000">
+            <div>Перфоратор BOSCHBFG 2000</div>
+            <div class="old-prise"><s>22500 Р.</s></div>
+            <div class="new-prise">12500 Р.</div>
+          </a>
         </li>
       </ul>
     </section>
     <section>
-      <div>
+      <div class="section-header">
         <h2>Популярные производители:</h2>
         <a href="#">Все производители</a>
       </div>
@@ -155,7 +182,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="servises">
       <h2>Сервисы</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -193,7 +220,8 @@
       <div>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/other/map.jpg" width="300" height="158" alt="Карта магазина по адресу г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
+        <img src="img/other/map.jpg" width="300" height="158"
+          alt="Карта магазина по адресу г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
         <br>
         <a href="#">Заблудились? Напишите нам!</a>
       </div>
