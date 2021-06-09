@@ -304,3 +304,6 @@ header {
     background-color: var(--basic-red);
 }
 
+.section-list {
+    list-style: none;
+}
