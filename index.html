@@ -23,8 +23,8 @@
         Техномарт
       </a>
       <form method="post" action="#" class="search-form">
-        <label for="textField">Поиск</label>
-        <input type="text" name="text" id="textField">
+        <label for="textField"></label>
+        <input type="text" name="text" id="textField" placeholder="Поиск">
       </form>
 
       <a class="bookmark" href="#">
@@ -113,7 +113,7 @@
     <section>
       <div class="section-header">
         <h2>Популярные товары:</h2>
-        <a href="#">Все популярные товары</a>
+        <a class="section-button" href="#">Все популярные товары</a>
       </div>
       <ul class="goods-list">
         <li>
@@ -138,7 +138,7 @@
             <div>Перфоратор BOSCHBFG 6000</div>
             <div class="old-price"><s>30500 Р.</s></div>
             <div class="new-price">22500 Р.</div>
-        </a>
+          </a>
         </li>
         <li>
           <a class="goods-item" href="blank.html">
@@ -153,7 +153,7 @@
     <section>
       <div class="section-header">
         <h2>Популярные производители:</h2>
-        <a href="#">Все производители</a>
+        <a class="section-button" href="#">Все производители</a>
       </div>
       <ul class="section-list">
         <li>
@@ -183,88 +183,101 @@
       </ul>
     </section>
     <section class="servises">
-      <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <div>
-        <ul>
-          <li>Доставка </li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Доставка</h3>
-        <p>Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,
-          поднимая его на ваш этаж!</p>
-        <img src="img/other/truck.png" width="468" height="261" alt="">
+      <div class="container">
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="servises-content">
+          <div>
+            <ul class="servises-list">
+              <li class="active">Доставка </li>
+              <li>Гарантия</li>
+              <li>Кредит</li>
+            </ul>
+          </div>
+          <div class="servises-description">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж!</p>
+          </div>
+          <div class="bigtruck"></div>
+        </div>
       </div>
     </section>
-    <section>
-      <div>
-        <h2>Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-          равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#">Подробнее о компании</a>
-      </div>
-      <div>
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/other/map.jpg" width="300" height="158"
-          alt="Карта магазина по адресу г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
-        <br>
-        <a href="#">Заблудились? Напишите нам!</a>
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <div>
+            <h2>Компания «Техномарт»</h2>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+              равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+              Техномарт работает со многими транспортными компаниями:
+            </p>
+            <ul class="transport-list">
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="section-button" href="#">Подробнее о компании</a>
+          </div>
+          <div>
+            <h2>Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+            <img src="img/other/map.jpg" width="300" height="158"
+              alt="Карта магазина по адресу г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
+            <br>
+            <a class="section-button" href="#">Заблудились? Напишите нам!</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div>
-      <a href="index.html">
-        Техномарт
-      </a>
-
-      <ul>
-        <li><a href="blank.html">Компания</a></li>
-        <li><a href="blank.html">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="blank.html">Доставка</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
-      <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
-      <a href="tel:+78005558628">+7 800 555-86-28</a>
-      <ul>
-        <li><a href="blank.html">Материалы</a></li>
-        <li><a href="blank.html">Техника</a></li>
-        <li><a href="blank.html">Инструмент</a></li>
-        <li><a href="blank.html">Спецпредложения</a></li>
-      </ul>
-    </div>
-    <div>
+  <footer class="main-footer">
+    <div class="container">
       <div>
-        <p>© 2010–2021 Компания «Техномарт»Все права защищены</p>
-        <ul>
-          <li><a href="#"><img src="img/icon/vk.svg" width="26" height="15" alt=""></a></li>
-          <li><a href="#"><img src="img/icon/fb.svg" width="12" height="22" alt=""></a></li>
-          <li><a href="#"><img src="img/icon/insta.svg" width="21" height="21" alt=""></a></li>
+        <a class="logo" href="index.html">
+          Техномарт
+        </a>
+        <ul class="bottom-nav1">
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
         </ul>
       </div>
       <div>
-        <p>Обратная связь:</p>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div>
+          <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
+        </div>
+        <ul class="bottom-nav2">
+          <li><a href="blank.html">Материалы</a></li>
+          <li><a href="blank.html">Техника</a></li>
+          <li><a href="blank.html">Инструмент</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
+        </ul>
       </div>
-      <div>
-        <p>Разработано —</p>
-        <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+    </div>
+    <div class="footer-contacts">
+      <div class="container">
+        <p>© 2010–2021 Компания «Техномарт»<br>Все права защищены</p>
+        <ul class="socials">
+          <li><i class="icon-vk"></i></li>
+          <li><i class="icon-fb"></i></li>
+          <li><i class="icon-insta"></i></li>
+        </ul>
+        <div>
+          <p>Обратная связь:</p>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div>
+          <p>Разработано —</p>
+          <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </div>
       </div>
     </div>
   </footer>
