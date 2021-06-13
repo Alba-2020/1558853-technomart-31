@@ -9,13 +9,12 @@
   --silver-grey: #F3F7F9;
   --basic-black: #000000;
   --basic-background: #F1F5F7;
-  --special-yellow: #FFBF47;
+  --warning: #FFBF47;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
   --special-greenlight: #8ED78F;
   --special-yellowlight: #FFD180;
   --success: #5FBB2D;
-  --warning: #FFBF47;
   --active-red: #BA2732;
   --light-grey: #EAEAEA;
   --nav-color: #32425C;
@@ -38,6 +37,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 header {
@@ -117,7 +121,7 @@ header {
   display: inline-block;
   text-align: center;
   width: 121px;
-  height: 45px;
+  min-height: 45px;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -160,7 +164,7 @@ header {
   display: inline-block;
   text-align: center;
   width: 121px;
-  height: 45px;
+  min-height: 45px;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -185,7 +189,7 @@ header {
 
 .contacts-phone {
   width: 270px;
-  height: 45px;
+  padding: 10px 40px;
   color: var(--basic-red);
   font-size: 21px;
   line-height: 30px;
@@ -198,14 +202,11 @@ header {
 
 .site-navigation {
   background-color: var(--nav-color);
-  list-style: none;
 }
-
 
 .site-navigation li {
   display: inline-block;
-  height: 60px;
-  line-height: 60px;
+  padding: 20px 20px;
 }
 
 .site-navigation a {
@@ -220,19 +221,18 @@ header {
 
 .feature {
   width: 256px;
-  height: 123px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: var(--white);
-  padding: 0 23px;
+  padding: 20px 23px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .materials {
-  background-color: var(--special-yellow);
+  background-color: var(--warning);
 }
 
 .icon-bucket {
@@ -247,10 +247,10 @@ header {
   content: url("../img/icon/drel.svg");
 }
 
-.prise {
+.price {
   font-size: 17px;
   line-height: 18px;
-  color: var(--prise-color);
+  color: var(--price-color);
 }
 
 .technics {
@@ -270,7 +270,7 @@ header {
 }
 
 .delivery {
-  background-color: var(--special-yellow);
+  background-color: var(--warning);
 }
 
 .icon-truck {
@@ -280,9 +280,8 @@ header {
 .features-button {
   display: inline-block;
   width: 135px;
-  height: 38px;
+  padding: 5px 10px;
   font-size: 14px;
-  line-height: 38px;
   text-align: center;
   color: var(--white);
   text-transform: uppercase;
@@ -291,18 +290,8 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.features-button:hover,
-.features-button:focus,
-.features-button:active {
+.features-button:hover, .features-button:focus, .features-button:active {
   background-color: var(--basic-greylight);
-}
-
-.slider-button {
-  width: 192px;
-  height: 38px;
-  background-color: var(--basic-red);
-  color: var(--white);
-  text-transform: uppercase;
 }
 
 .section-header {
@@ -335,10 +324,6 @@ header {
   background-color: var(--hover-red);
 }
 
-.goods-list {
-  list-style: none;
-}
-
 .goods-item {
   border: 1px solid var(--light-grey);
   font-family: 'PT Sans', sans-serif;
@@ -365,15 +350,9 @@ header {
   background-color: var(--basic-red);
 }
 
-.section-list {
-  list-style: none;
-}
-
-.servises {
-  width: 100%;
+.services {
   background-color: var(--basic-background);
   padding: 40px 0;
-
 }
 
 .servises p {
@@ -404,7 +383,6 @@ header {
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
-  list-style: none;
   width: 240px;
 }
 
@@ -463,9 +441,7 @@ header {
 }
 
 .transport-list {
-  list-style: none;
   color: var(--basic-black);
-  padding-left: 0;
 }
 
 .transport-list>li::before {
@@ -477,7 +453,6 @@ header {
 }
 
 .main-footer {
-  width: 100%;
   background-color: var(--nav-color);
   color: var(--white);
 }
@@ -492,18 +467,11 @@ header {
   justify-content: space-between;
 }
 
-.bottom-nav1,
-.bottom-nav2 {
-  list-style: none;
-  padding-left: 0;
-}
-
-.bottom-nav1 li,
-.bottom-nav2 li {
+.footer-navigation li, .footer-goods li {
   display: inline-block;
 }
 
-.bottom-nav2>li>a {
+.footer-goods>li>a {
   color: var(--special-yellowlight);
 }
 
@@ -519,11 +487,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.socials {
-  list-style: none;
-  padding-left: 0;
 }
 
 .socials>li {
