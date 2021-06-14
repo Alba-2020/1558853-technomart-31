@@ -24,7 +24,6 @@
   --hover-red: #CA2C37;
 }
 
-
 body {
   font-family: 'Cuprum', sans-serif;
   font-size: 18px;
@@ -52,6 +51,17 @@ header {
 .container {
   width: 940px;
   margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
 }
 
 .top-nav {
@@ -134,6 +144,18 @@ header {
   color: var(--basic-red);
 }
 
+.icon-profile {
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/icon/user.svg");
+}
+
+.icon-logout {
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon/login.svg");
+}
+
 .checkout {
   display: inline-block;
   text-align: center;
@@ -159,6 +181,12 @@ header {
 
 .sign-block {
   display: inline-block;
+  background-color: var(--white);
+  padding: 10px 20px;
+}
+
+.sign-block a {
+  color: var(--basic-black);
 }
 
 .sign-in {
@@ -203,21 +231,35 @@ header {
 
 .site-navigation {
   background-color: var(--nav-color);
-}
-
-.site-navigation li {
-  display: inline-block;
-  padding: 20px 20px;
+  justify-content: space-evenly;
 }
 
 .site-navigation a {
   display: block;
   color: var(--white);
-  padding: 0 20px;
+  padding: 18px 20px;
 }
 
 .site-navigation a:hover {
   background-color: var(--dark-blue);
+}
+
+.breadcrumbs > li {
+  display: inline-block;
+}
+
+.breadcrumbs a {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.breadcrumbs>li:not(:first-child)>a::before{
+  content: ">";
+  padding: 0 10px;
+  color: var(--basic-greylight);
 }
 
 .feature {
