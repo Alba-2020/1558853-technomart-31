@@ -22,6 +22,7 @@
   --price-color: #A9A9A9;
   --inset-shadow: #405069;
   --hover-red: #CA2C37;
+  --filters-color: #F7F3EC;
 }
 
 body {
@@ -260,6 +261,59 @@ header {
   content: ">";
   padding: 0 10px;
   color: var(--basic-greylight);
+}
+
+.main-header {
+  background-color: var(--basic-background);
+  padding: 32px 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.filters-header {
+  background-color: var(--filters-color);
+  padding: 10px 20px;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+
+}
+
+.filters-field {
+  border: 0;
+  border-bottom: 1px solid var(--light-grey);
+  padding: 20px 0px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+}
+
+.filters-field:last-child {
+  border: none;
+}
+
+.filters-field legend {
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filters-field input[type="text"] {
+  background-color: var(--filters-color);
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.filters-field label {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 19px;
+  padding: 5px 0;
+  display: block;
 }
 
 .feature {
