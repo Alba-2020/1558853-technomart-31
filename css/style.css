@@ -45,6 +45,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--white);
+  min-height: 100%;
+  display: grid;
 }
 
 a {
@@ -59,6 +61,8 @@ ul {
 
 header {
   background-color: var(--basic-background);
+  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .container {
@@ -129,16 +133,20 @@ header {
   color: var(--white);
 }
 
-.bookmark::before {
-  content: url("../img/icon/bookmark.svg");
+.icon-bookmark {
+  height: 16px;
+  width: 14px;
+  background-image: url("../img/icon/bookmark.svg");
 }
 
-.bookmark:hover::before {
+.icon-bookmark:hover {
   filter: brightness(1000%);
 }
 
-.busket::before {
-  content: url("../img/icon/smalltrolley.svg");
+.icon-busket {
+  height: 15px;
+  width: 15px;
+  background-image: url("../img/icon/smalltrolley.svg");
 }
 
 .sign-up {
@@ -153,7 +161,7 @@ header {
   display: inline-block;
 }
 
-.sign-up:hover {
+.icon-sign-up:hover {
   color: var(--basic-red);
 }
 
@@ -213,15 +221,17 @@ header {
   background-color: var(--white);
 }
 
-.sign-in::before {
-  content: url("../img/icon/login.svg")
+.icon-sign-in {
+  height: 17px;
+  width: 20px;
+  background-image: url("../img/icon/login.svg");
 }
 
-.sign-in:hover {
+.icon-sign-in:hover {
   color: var(--basic-red);
 }
 
-.sign-in:hover::before {
+.icon-sign-in:hover {
   filter: brightness(0%);
 }
 
@@ -368,8 +378,16 @@ header {
   padding: 0px 40px;
 }
 
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 123px 123px 123px;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
 .feature {
-  width: 256px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -378,6 +396,26 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.features-button {
+  display: inline-block;
+  width: 135px;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-top: 11px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.features-button:hover, .features-button:focus {
+  background-color: #C5C5C555;
+}
+
+.features-button:focus, .features-button:active {
+  background-color: #A9A9A955;
 }
 
 .materials {
@@ -430,21 +468,33 @@ header {
   content: url("../img/icon/truck.svg");
 }
 
-.features-button {
-  display: inline-block;
-  width: 135px;
-  padding: 5px 10px;
-  font-size: 14px;
-  text-align: center;
-  color: var(--white);
-  text-transform: uppercase;
-  margin-top: 11px;
-  background-color: rgba(0, 0, 0, 0.25);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.slider {
+  grid-column: 1/3;
+  grid-row: 2/4;
+  position: relative;
 }
 
-.features-button:hover, .features-button:focus, .features-button:active {
-  background-color: var(--basic-greylight);
+.slider-header {
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  padding: 20px;
+}
+
+.slider-header>h2 {
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.slider>.section-button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 .section-header {
@@ -454,6 +504,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .section-header>h2 {
@@ -477,9 +529,13 @@ header {
   background-color: var(--hover-red);
 }
 
+.goods-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .goods-list li {
   display: inline-block;
-  width: 33%;
   position: relative;
 }
 
@@ -560,6 +616,13 @@ header {
 
 .goods-actions>a {
   display: block;
+}
+
+.section-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+  gap: 20px 20px;
 }
 
 .section-seo {

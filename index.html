@@ -19,98 +19,108 @@
 <body>
   <header>
     <div class="top-nav">
-      <a class="logo" href="index.html">
-        Техномарт
-      </a>
-      <form method="post" action="#" class="search-form">
-        <label for="textField"></label>
-        <input type="text" name="text" id="textField" placeholder="Поиск">
-      </form>
+      <div class="container container-flex">
+        <a class="logo" href="index.html">
+          Техномарт
+        </a>
+        <form method="post" action="#" class="search-form">
+          <label for="textField"></label>
+          <input type="text" name="text" id="textField" placeholder="Поиск">
+        </form>
 
-      <a class="bookmark" href="#">
-        Закладки
-      </a>
-      <a class="busket" href="#">
-        Корзина
-      </a>
-      <a class="checkout" href="#">
-        Оформить заказ
-      </a>
+        <a href="#">
+          <i class="icon icon-bookmark"></i>
+          Закладки
+        </a>
+        <a href="#">
+          <i class="icon icon-busket"></i>
+          Корзина
+        </a>
+        <a class="checkout" href="#">
+          Оформить заказ
+        </a>
+      </div>
     </div>
-    <div>
-      <div>
-        <p class="shop-description">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
-        <div class="contacts-block">
-          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
-        </div>
 
-        <div class="sign-block">
-          <a class="sign-in" href="#">Войти</a>
-          <a class="sign-up" href="#">Регистрация</a>
-        </div>
+    <div class="container container-flex">
+      <p class="shop-description">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
+      <div class="contacts-block">
+        <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
       </div>
 
-      <nav class="container-nav">
-        <ul class="site-navigation">
-          <li><a href="blank.html">Главная</a></li>
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="sign-block">
+        <a href="#">
+          <i class="icon icon-sign-in"></i>Войти
+        </a>
+        <a href="#">
+          <i class="icon icon-sign-up"></i>
+          Регистрация
+        </a>
+      </div>
+    </div>
+
+
+    <nav class="site-navigation container container-flex">
+      <a href="blank.html">Главная</a>
+      <a href="blank.html">Компания</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="blank.html">Новости</a>
+      <a href="blank.html">Спецпредложения</a>
+      <a href="blank.html">Доставка</a>
+      <a href="blank.html">Контакты</a>
+    </nav>
   </header>
   <main>
-    <section class="features">
-      <div class="feature materials">
-        <div>
-          <div>Материалы</div>
-          <a class="features-button" href="blank.html">На любой вкус</a>
+    <section class="container">
+      <div class="features">
+        <div class="feature materials">
+          <div>
+            <div>Материалы</div>
+            <a class="features-button" href="blank.html">На любой вкус</a>
+          </div>
+          <i class="icon-bucket"></i>
         </div>
-        <i class="icon-bucket"></i>
-      </div>
-      <div class="feature instruments">
-        <div>
-          <div>Инструмент</div>
-          <a class="features-button" href="blank.html">На все случаи</a>
+        <div class="feature instruments">
+          <div>
+            <div>Инструмент</div>
+            <a class="features-button" href="blank.html">На все случаи</a>
+          </div>
+          <i class="icon-drel"></i>
         </div>
-        <i class="icon-drel"></i>
-      </div>
-      <div class="feature technics">
-        <div>
-          <div>Техника</div>
-          <a class="features-button" href="blank.html">Для стройки</a>
+        <div class="feature technics">
+          <div>
+            <div>Техника</div>
+            <a class="features-button" href="blank.html">Для стройки</a>
+          </div>
+          <i class="icon-tractor"></i>
         </div>
-        <i class="icon-tractor"></i>
-      </div>
-      <div class="slider">
-        <div>
-          Перфораторы
-          <div>Настоящие мужские игрушки</div>
+        <div class="slider">
+          <div class="slider-header">
+            <h2>Перфораторы</h2>
+            <div>Настоящие мужские игрушки</div>
+          </div>
+          <img src="img/slider/perforator.jpg" width="620" height="266" alt="Перфораторы">
+          <img src="img/icon/left.svg" width="22" height="40" alt="">
+          <a class="section-button" href="blank.html">Открыть каталог</a>
         </div>
-        <img src="img/slider/perforator.jpg" width="620" height="266" alt="Перфораторы">
-        <img src="img/icon/left.svg" width="22" height="40" alt="">
-        <a class="section-button" href="blank.html">Открыть каталог</a>
-      </div>
-      <div class="feature discounts">
-        <div>
-          <div> Скидки 50%</div>
-          <a class="features-button" href="blank.html">На 350 товаров</a>
+        <div class="feature discounts">
+          <div>
+            <div> Скидки 50%</div>
+            <a class="features-button" href="blank.html">На 350 товаров</a>
+          </div>
+          <i class="icon-trolley"></i>
         </div>
-        <i class="icon-trolley"></i>
-      </div>
-      <div class="feature delivery">
-        <div>
-          <div>Доставка</div>
-          <a class="features-button" href="blank.html">Бесплатно</a>
+        <div class="feature delivery">
+          <div>
+            <div>Доставка</div>
+            <a class="features-button" href="blank.html">Бесплатно</a>
+          </div>
+          <i class="icon-truck"></i>
         </div>
-        <i class="icon-truck"></i>
       </div>
     </section>
-    <section>
+    <section class="container">
       <div class="section-header">
         <h2>Популярные товары:</h2>
         <a class="section-button" href="#">Все популярные товары</a>
@@ -128,7 +138,7 @@
           <a class="goods-item" href="blank.html">
             <img src="img/goods/drel2.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 3000">
             <div>Перфоратор BOSCHBFG 3000</div>
-            <div class="old-price"><s>22500 Р.</s></div>
+            <div class="old-price">22500 Р.</div>
             <div class="new-price">15500 Р.</div>
           </a>
         </li>
@@ -136,7 +146,7 @@
           <a class="goods-item" href="blank.html">
             <img src="img/goods/drel3.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 6000">
             <div>Перфоратор BOSCHBFG 6000</div>
-            <div class="old-price"><s>30500 Р.</s></div>
+            <div class="old-price">30500 Р.</div>
             <div class="new-price">22500 Р.</div>
           </a>
         </li>
@@ -144,13 +154,13 @@
           <a class="goods-item" href="blank.html">
             <img src="img/goods/drel2.jpg" width="184" height="164" alt="Перфоратор BOSCHBFG 2000">
             <div>Перфоратор BOSCHBFG 2000</div>
-            <div class="old-price"><s>22500 Р.</s></div>
+            <div class="old-price">22500 Р.</div>
             <div class="new-price">12500 Р.</div>
           </a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="container">
       <div class="section-header">
         <h2>Популярные производители:</h2>
         <a class="section-button" href="#">Все производители</a>
@@ -266,9 +276,21 @@
       <div class="container">
         <p>© 2010–2021 Компания «Техномарт»<br>Все права защищены</p>
         <ul class="socials">
-          <li><i class="icon-vk"></i></li>
-          <li><i class="icon-fb"></i></li>
-          <li><i class="icon-insta"></i></li>
+          <li>
+            <a href="#">
+              <i class="icon-vk"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon-fb"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon-insta"></i>
+            </a>
+          </li>
         </ul>
         <div>
           <p>Обратная связь:</p>
