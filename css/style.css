@@ -24,7 +24,6 @@
   --hover-red: #CA2C37;
   --filters-color: #F7F3EC;
   --filters-button: #E5E5E5;
-  
   --font-main: 'Cuprum', sans-serif;
   --font-secondary: 'PT Sans', sans-serif;
 }
@@ -32,12 +31,12 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
- 
   font-family: var(--font-main);
   font-size: 18px;
   font-weight: 400;
@@ -292,7 +291,6 @@ header {
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
-
 }
 
 .filters-field {
@@ -407,6 +405,7 @@ header {
 .old-price {
   text-decoration: line-through;
 }
+
 .technics {
   background-color: var(--special-lilac);
 }
@@ -444,9 +443,7 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.features-button:hover,
-.features-button:focus,
-.features-button:active {
+.features-button:hover, .features-button:focus, .features-button:active {
   background-color: var(--basic-greylight);
 }
 
@@ -699,8 +696,7 @@ header {
   justify-content: space-between;
 }
 
-.footer-navigation li,
-.footer-goods li {
+.footer-navigation li, .footer-goods li {
   display: inline-block;
 }
 
