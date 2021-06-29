@@ -237,15 +237,24 @@ header {
 
 .contacts-block {
   display: inline-block;
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-style: normal;
+}
+
+.address-description {
+  font-style: normal;
 }
 
 .contacts-phone {
+  display: inline-block;
   width: 270px;
   padding: 10px 40px;
   color: var(--basic-red);
-  font-size: 21px;
-  line-height: 30px;
   border: 3px solid var(--white);
+  font-weight: 700;
+  font-size: 21px;
+  
 }
 
 .contacts-phone::before {
@@ -266,6 +275,8 @@ header {
 .site-navigation a:hover {
   background-color: var(--dark-blue);
 }
+
+
 
 .breadcrumbs {
   display: flex;
@@ -376,6 +387,23 @@ header {
   text-decoration: none;
   display: inline-block;
   padding: 0px 40px;
+}
+
+.inner-grid {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.catalog-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.sorting {
+  grid-column: 1/2;
 }
 
 .features {
@@ -539,6 +567,7 @@ header {
 }
 
 .goods-list {
+  column-gap: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -712,7 +741,8 @@ header {
 
 .about {
   width: 100%;
-  padding: 30px 0;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .about-content {
@@ -743,6 +773,7 @@ header {
 
 .transport-list {
   color: var(--basic-black);
+  margin-bottom: 25px;
 }
 
 .transport-list>li::before {
@@ -751,6 +782,10 @@ header {
   margin-right: 10px;
   vertical-align: text-bottom;
   font-size: 2em;
+}
+
+.map {
+  margin-bottom: 25px;
 }
 
 .main-footer {
