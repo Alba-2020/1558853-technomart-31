@@ -62,7 +62,6 @@ ul {
 header {
   background-color: var(--basic-background);
   padding-bottom: 60px;
-  
 }
 
 .container {
@@ -177,6 +176,15 @@ header {
   background-image: url("../img/icon/login.svg");
 }
 
+.current-busket {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  height: 42px;
+  line-height: 42px;
+  background-color: var(--basic-red);
+}
+
 .checkout {
   display: inline-block;
   text-align: center;
@@ -254,7 +262,6 @@ header {
   border: 3px solid var(--white);
   font-weight: 700;
   font-size: 21px;
-  
 }
 
 .contacts-phone::before {
@@ -275,8 +282,6 @@ header {
 .site-navigation a:hover {
   background-color: var(--dark-blue);
 }
-
-
 
 .breadcrumbs {
   display: flex;
@@ -308,7 +313,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-content: start;
-
 }
 
 .filters-header {
@@ -367,26 +371,41 @@ header {
   background-color: var(--white);
 }
 
-
-.pagination>a {
- 
-  width: 38px;
-  height: 38px;
-  padding: 5px 10px;
+.pagination a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  line-height: 1;
   font-size: 13px;
   text-align: center;
   color: var(--basic-black);
   background-color: var(--white);
-  border: 1px solid var(--basic-black);
-
+  border: 1px solid var(--filters-button);
+  border-radius: 2px;
+  padding: 8px 14px 10px 14px;
 }
 
-.pagination>li {
+.pagination .current {
+  background-color: var(--basic-red);
+  color: var(--white);
+  border-color: var(--basic-red);
+}
+
+.pagination>li:last-child>a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pagination li {
   display: inline-block;
+  padding-right: 10px;
+}
+
+.pagination {
+  margin: 40px 0px;
 }
 
 .sorting {
-
   background-color: var(--filters-color);
   padding: 10px 20px;
   font-family: var(--font-secondary);
@@ -421,7 +440,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 123px 123px 123px;
- 
   padding: 0;
   gap: 20px;
 }
@@ -487,8 +505,6 @@ header {
   line-height: 18px;
   color: var(--price-color);
 }
-
-
 
 .technics {
   background-color: var(--special-lilac);
