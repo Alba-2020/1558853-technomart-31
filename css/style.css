@@ -27,6 +27,7 @@
   --font-main: 'Cuprum', sans-serif;
   --font-secondary: 'PT Sans', sans-serif;
   --dark-red: #c33;
+  --socials-background: #212A3A;
 }
 
 html {
@@ -50,8 +51,15 @@ body {
   display: grid;
 }
 
+
+
 a {
   text-decoration: none;
+}
+
+address {
+  font-family: var(--font-main);
+  font-style: normal;
 }
 
 ul {
@@ -107,6 +115,7 @@ header {
 }
 
 .logo {
+  line-height: 64px;
   text-align: center;
   width: 220px;
   background-color: var(--basic-red);
@@ -115,9 +124,14 @@ header {
   font-size: 24px;
 }
 
-.logo:active {
+.top-nav .logo:active {
   background-color: var(--active-red);
 }
+
+.top-nav .logo:hover {
+  background-color: var(--basic-red);
+}
+
 
 .search-form {
   padding-left: 10px;
@@ -158,6 +172,12 @@ header {
   background-image: url("../img/icon/smalltrolley.svg");
 }
 
+.contacts-block>.contacts-phone>header-address {
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-style: normal;
+}
+
 .sign-up {
   display: inline-block;
   text-align: center;
@@ -190,12 +210,16 @@ header {
   background-color: var(--basic-red);
 }
 
-.checkout {
+.top-nav .checkout {
   background-color: var(--basic-green);
 }
 
-.checkout:hover {
+.top-nav .checkout:hover {
   background-color: var(--success);
+}
+
+.top-nav .checkout:active {
+  filter: brightness(80%);
 }
 
 .shop-description {
@@ -208,12 +232,15 @@ header {
 }
 
 .sign-block {
-  display: inline-block;
-  background-color: var(--white);
-  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+ 
 }
 
 .sign-block a {
+  background-color: var(--white);
+  padding: 10px 20px;
   color: var(--basic-black);
 }
 
@@ -243,17 +270,13 @@ header {
 }
 
 .contacts-block {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-main);
   font-size: 14px;
   font-style: normal;
 }
 
-.contacts-block>address {
-  font-family: var(--font-main);
-  font-size: 18px;
-  font-style: normal;
-}
 
 .contacts-phone {
   display: inline-block;
@@ -270,15 +293,19 @@ header {
 }
 
 .site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   box-shadow:0px 5px 0px 0px var(--dark-blue);
   background-color: var(--nav-color);
-  justify-content: space-evenly;
+  padding: 0 20px;
+  
 }
 
 .site-navigation a {
   display: block;
   color: var(--white);
-  padding: 18px 20px;
+  padding: 16px 0;
+  text-align: center;
 }
 
 .site-navigation a:hover {
@@ -603,6 +630,10 @@ header {
   background-color: var(--hover-red);
 }
 
+.section-button:active {
+  background-color: var(--active-red);
+}
+
 .goods-list {
   margin-top: 20px;
   display: grid;
@@ -706,6 +737,15 @@ header {
   padding: 0;
   gap: 20px 20px;
   margin-bottom: 70px;
+}
+
+.section-list li:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.section-list li:active {
+  filter: opacity(50%);
 }
 
 .section-seo {
@@ -845,7 +885,7 @@ header {
 }
 
 .main-footer a {
-  padding: 20px;
+  text-decoration: none;
   color: var(--white);
 }
 
@@ -853,16 +893,47 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .footer-navigation li, .footer-goods li {
+  text-decoration: none;
   display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-goods a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  color: var(--basic-background);
+  filter: opacity(0.5);
+  text-decoration: none;
+
+}
+
+.footer-goods a:active {
+  color: var(--special-yellowlight);
+  filter: opacity(0.5);
+  text-decoration: none;
+}
+
+.footer-navigation {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 40px;
 }
 
 .footer-goods>li>a {
   color: var(--special-yellowlight);
 }
+
 
 .footer-contacts {
   background-color: var(--dark-blue);
@@ -872,12 +943,26 @@ header {
   color: var(--special-yellowlight);
 }
 
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+
+.footer-contacts a:active {
+  color: var(--basic-red);
+  text-decoration: none;
+}
+
 .footer-contacts>.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+.socials>li>div {
+  background-color: var(--socials-background);
+  border-radius: 20px;
 }
 
 .socials>li {
