@@ -734,16 +734,16 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0;
-  gap: 20px 20px;
+  gap: 16px 20px;
   margin-bottom: 70px;
 }
 
-.section-list li:hover {
+.section-list img:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border: none;
 }
 
-.section-list li:active {
+.section-list img:active {
   filter: opacity(50%);
 }
 
