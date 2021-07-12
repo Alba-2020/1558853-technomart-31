@@ -122,7 +122,7 @@ header {
   font-size: 24px;
 }
 
-.top-nav .logo:active {
+.top-nav>.container-flex>div>.logo:active {
   background-color: var(--active-red);
 }
 
