@@ -814,6 +814,10 @@ header {
   box-shadow: none;
 }
 
+.servises-list>.active:hover {
+  background-color: var(--white);
+}
+
 .servises-list>li:hover {
   background-color: var(--dark-blue);
 }
