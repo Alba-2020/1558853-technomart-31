@@ -126,7 +126,7 @@ header {
 }
 
 .top-nav a:hover .icon {
-  filter: brightness(1000%);
+  filter: opacity(1);
 }
 
 .logo {
@@ -153,7 +153,7 @@ header {
 }
 
 .search-form label {
-  filter: brightness(50%);
+  filter: opacity(0.5);
   content: url("../img/icon/search.svg");
 }
 
@@ -173,7 +173,7 @@ header {
 }
 
 .icon-bookmark {
-  filter: brightness(50%);
+  filter: opacity(0.5);
   height: 16px;
   width: 14px;
   background-image: url("../img/icon/bookmark.svg");
@@ -181,7 +181,7 @@ header {
 }
 
 .icon-busket {
-  filter: brightness(50%);
+  filter: opacity(0.5);
   height: 15px;
   width: 15px;
   background-image: url("../img/icon/smalltrolley.svg");
@@ -218,8 +218,7 @@ header {
 }
 
 .icon-profile:hover {
-  filter: brightness(35%);
-
+  filter: brightness(0.4);
 }
 
 .icon-logout {
@@ -230,7 +229,7 @@ header {
 }
 
 .icon-logout:hover {
-  filter: brightness(35%);
+  filter: brightness(0.4);
 }
 
 .current-busket {
@@ -246,7 +245,7 @@ header {
 }
 
 .top-nav .checkout:active {
-  filter: brightness(80%);
+  filter: opacity(0.8);
 }
 
 .shop-description {
@@ -263,8 +262,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-  
 
 .sign-block a {
   background-color: var(--white);
@@ -415,7 +412,6 @@ header {
 }
 
 .filters-field {
-  
   border: 0;
   border-bottom: 1px solid var(--light-grey);
   padding: 20px 0px;
@@ -537,7 +533,6 @@ header {
 .range-controls .scale {
   height: 2px;
   background: var(--basic-greylight);
-  
 }
 
 .range-controls .bar {
@@ -576,7 +571,6 @@ header {
 .price-controls input {
   width: 95px;
   padding: 10px;
-  
   text-align: center;
   color: var(--basic-black);
   border: none;
@@ -585,6 +579,7 @@ header {
   font-family: inherit;
   font-size: inherit;
 }
+
 .pagination a {
   text-transform: uppercase;
   text-decoration: none;
@@ -823,7 +818,7 @@ header {
   margin-top: 20px;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .goods-list-catalog {
@@ -834,6 +829,10 @@ header {
 }
 
 .goods-list li {
+  position: relative;
+}
+
+.goods-list-catalog li {
   position: relative;
 }
 
@@ -851,7 +850,7 @@ header {
   font-weight: 700;
   line-height: 20px;
   color: var(--basic-black);
-  padding: 10px;
+  padding: 20px;
   display: block;
   text-align: center;
 }
@@ -860,20 +859,48 @@ header {
   padding-bottom: 10px;
 }
 
+.goods-item-new {
+  background-image: url("../img/other/new.png");
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 70px;
+}
+
 .old-price {
   font-size: 17px;
-  line-height: 18px;
+  min-height: 30px;
   color: var(--price-color);
   text-decoration: line-through;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-family: var(--font-secondary);
 }
 
 .new-price {
-  font-size: 17px;
-  line-height: 18px;
-  color: var(--white);
-  font-weight: 700;
+  position: relative;
+  margin-left: -10px;
+  padding: 8px 30px;
   background-color: var(--basic-red);
+  color: var(--white);
+  font-family: var(--font-secondary);
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.new-price:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  right: -19px;
+  border-color: transparent transparent transparent var(--basic-red);
+  border-width: 19px 0 19px 19px;
 }
 
 .buy-button {
@@ -964,23 +991,16 @@ header {
   padding: 40px 0;
 }
 
-.servises p {
+.services p {
   font-family: var(--font-secondary);
   font-size: 13px;
+  line-height: 24px;
 }
 
-.servises h2 {
+.services h2 {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  text-transform: uppercase;
-}
-
-.servises h3 {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 30px;
-  color: var(--nav-color);
   text-transform: uppercase;
 }
 
@@ -989,43 +1009,56 @@ header {
   margin-left: -120px;
 }
 
-.servises-list {
+.services-list {
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
   width: 240px;
 }
 
-.servises-list>li {
+.services-list>li {
   background-color: var(--nav-color);
   color: var(--white);
-  padding: 10px 20px;
+  padding: 15px 20px;
   box-shadow: 0px 1px 0px var(--dark-blue), inset 0px 1px 0px var(--inset-shadow);
 }
 
-.servises-list>.active {
+.services-list>.active {
   background-color: var(--white);
   color: var(--nav-color);
   box-shadow: none;
 }
 
-.servises-list>.active:hover {
+.services-list>.active:hover {
   background-color: var(--white);
 }
 
-.servises-list>li:hover {
+.services-list>li:hover {
   background-color: var(--dark-blue);
 }
 
-.servises-content {
+.services-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.servises-description {
-  margin-left: 40px;
+.services-description {
+  padding: 25px 0px 25px 80px;
+  margin-left: -10px;
   z-index: 1000;
+  background-image: url(../img/other/shadow.png);
+  background-position: left, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+.services-description h3 {
+  text-transform: uppercase;
+  color: var(--nav-color);
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var(--font-main);
+  line-height: 30px;
 }
 
 .about {
@@ -1106,7 +1139,7 @@ header {
 
 .footer-navigation li, .footer-goods li {
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .footer-navigation a:hover {
@@ -1142,6 +1175,14 @@ header {
 
 .footer-contacts {
   background-color: var(--dark-blue);
+  font-size: 16px;
+  line-height: 18px;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.footer-contacts p {
+  margin: 0;
 }
 
 .footer-contacts a {
