@@ -394,6 +394,10 @@ header {
   align-content: start;
 }
 
+.filters {
+  margin-right: 10px;
+}
+
 .filters-header {
   background-color: var(--filters-color);
   padding: 10px 20px;
@@ -415,7 +419,6 @@ header {
   border: 0;
   border-bottom: 1px solid var(--light-grey);
   padding: 20px 0px;
-  padding-right: 10px;
   font-family: var(--font-secondary);
   font-size: 15px;
   line-height: 19px;
@@ -463,6 +466,11 @@ header {
   border-radius: 3px;
 }
 
+.filters-field input[type="checkbox"]+label {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
 .filters-field input[type="checkbox"]:checked+label:after {
   content: "";
   position: absolute;
@@ -497,11 +505,16 @@ header {
   border-radius: 50%;
 }
 
+.filters-field input[type="radio"]+label {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
 .filters-button {
   width: 100%;
-  padding: 5px 40px;
+  margin-top: -1px;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 38px;
   color: var(--basic-black);
   text-transform: uppercase;
   border: 1px solid var(--light-grey);
