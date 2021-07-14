@@ -20,25 +20,28 @@
   <header>
     <div class="top-nav">
       <div class="container container-flex">
-        <a class="logo" href="index.html">
-          Техномарт
-        </a>
-        <form method="post" action="#" class="search-form">
-          <label for="textField"></label>
-          <input type="text" name="text" id="textField" placeholder="Поиск">
-        </form>
-
-        <a href="#">
-          <i class="icon icon-bookmark"></i>
-          Закладки
-        </a>
-        <a class="current-busket" href="#">
-          <i class="icon icon-busket"></i>
-          Корзина
-        </a>
-        <a class="checkout" href="#">
-          Оформить заказ
-        </a>
+        <div>
+          <a class="logo" href="index.html">
+            Техномарт
+          </a>
+          <form method="post" action="#" class="search-form">
+            <label for="textField"></label>
+            <input type="text" name="text" id="textField" placeholder="Поиск">
+          </form>
+        </div>
+        <div>
+          <a href="#">
+            <i class="icon icon-bookmark"></i>
+            Закладки
+          </a>
+          <a class="current-busket" href="#">
+            <i class="icon icon-busket"></i>
+            Корзина
+          </a>
+          <a class="checkout" href="#">
+            Оформить заказ
+          </a>
+        </div>
       </div>
     </div>
     <div class="container container-flex">
@@ -48,7 +51,7 @@
         <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
       </div>
 
-      <div class="sign-block">
+      <div class="catalog-sign-block">
         <a href="#">
           <i class="icon icon-profile"></i>
           Равшан Джамшутович
@@ -85,22 +88,38 @@
           <div class="filters-header">Фильтр:</div>
           <fieldset class="filters-field">
             <legend>Цена:</legend>
-            <input type="text" value="0">
-            <span>-</span>
-            <input type="text" value="30000">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="number" name=min-price value="0">
+                </label>
+                <label class="max-price">
+                  <input type="number" name=max-price value="30000">
+                </label>
+
+              </div>
+            </div>
           </fieldset>
           <fieldset class="filters-field">
             <legend>Производители:</legend>
-            <label><input type="checkbox" name="brand" checked value="BOSCH">BOSCH</label>
-            <label><input type="checkbox" name="brand" value="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
-            <label><input type="checkbox" name="brand" checked value="MAKIta">MAKIta</label>
-            <label><input type="checkbox" name="brand" value="Dewalt">Dewalt</label>
-            <label><input type="checkbox" name="brand" value="Hitachi">Hitachi</label>
+            <input class="visually-hidden" type="checkbox" name="brand" checked value="BOSCH"> <label>BOSCH</label>
+            <input class="visually-hidden" type="checkbox" name="brand" value="ИНТЕРСКОЛ"> <label>ИНТЕРСКОЛ</label>
+            <input class="visually-hidden" type="checkbox" name="brand" checked value="MAKIta"> <label>MAKIta</label>
+            <input class="visually-hidden" type="checkbox" name="brand" value="Dewalt"> <label>Dewalt</label>
+            <input class="visually-hidden" type="checkbox" name="brand" value="Hitachi"> <label>Hitachi</label>
           </fieldset>
           <fieldset class="filters-field">
             <legend>Питание:</legend>
-            <label><input type="radio" name="power" checked value="rechargeable">Аккумуляторные</label>
-            <label><input type="radio" name="power" value="network">Сетевые</label>
+            <input class="visually-hidden" type="radio" name="power" checked
+              value="rechargeable"><label>Аккумуляторные</label>
+            <input class="visually-hidden" type="radio" name="power" value="network"><label>Сетевые</label>
           </fieldset>
           <button class="filters-button" type="submit">Показать</button>
         </form>
