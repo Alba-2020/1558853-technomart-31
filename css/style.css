@@ -645,11 +645,11 @@ header {
   border-color: var(--basic-red);
 }
 
-.pagination:hover {
+.pagination a:hover {
   border: 1px solid var(--basic-greylight);
 }
 
-.pagination:active {
+.pagination a:active {
   border: 1px solid var(--basic-red);
 }
 
@@ -1011,7 +1011,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 164px;
+  height: 170px;
   padding: 40px;
   display: none;
 }
