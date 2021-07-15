@@ -29,6 +29,8 @@
   --dark-red: #c33;
   --socials-background: #212A3A;
   --toggle-color: #ABABAB;
+  --buy-active: #518534;
+  --checkbox-hover: #B5B5B5;
 }
 
 html {
@@ -270,6 +272,14 @@ header {
   margin-left: 10px;
 }
 
+.sign-block a:hover {
+  color: var(--basic-red);
+}
+
+.sign-block a:hover .icon {
+  filter: brightness(0.4);
+}
+
 .sign-in {
   display: inline-block;
   text-align: center;
@@ -288,13 +298,6 @@ header {
   background-image: url("../img/icon/login.svg");
 }
 
-.icon-sign-in:hover {
-  color: var(--basic-red);
-}
-
-.icon-sign-in:hover {
-  filter: brightness(0%);
-}
 
 .catalog-sign-block {
   display: inline-block;
@@ -302,11 +305,43 @@ header {
   background-color: var(--white);
   width: 299px;
   line-height: 45px;
+  margin-bottom: -20px;
 }
 
 .catalog-sign-block a {
-  text-decoration: none;
   color: var(--basic-black);
+}
+
+.catalog-sign-block a:hover {
+ color: var(--basic-red);
+}
+
+.catalog-sign-block a:active {
+  filter: opacity(0.8);
+  color: var(--basic-greylight);
+}
+
+.catalog-sign-block a:hover .icon {
+  filter: brightness(0.4);
+}
+
+.catalog-sign-block a:active .icon {
+  filter: opacity(0.8);
+}
+
+.profile-options {
+  background-color: var(--basic-background);
+  font-size: 16px;
+  color: var(--nav-color);
+}
+
+.profile-options:hover {
+  color: var(--basic-red);
+}
+
+.profile-options:active {
+  color: var(--basic-greylight);
+  filter: opacity(0.8);
 }
 
 .contacts-block {
@@ -462,6 +497,11 @@ header {
   border-radius: 3px;
 }
 
+.filters-field input[type="checkbox"]+label:hover {
+  background-color: 
+}
+
+
 .filters-field input[type="checkbox"]+label {
   margin-left: 30px;
   margin-bottom: 10px;
@@ -598,6 +638,14 @@ header {
   background-color: var(--basic-red);
   color: var(--white);
   border-color: var(--basic-red);
+}
+
+.pagination:hover {
+  border: 1px solid var(--basic-greylight);
+}
+
+.pagination:active {
+  border: 1px solid var(--basic-red);
 }
 
 .pagination>li:last-child>a {
@@ -911,6 +959,15 @@ header {
   color: var(--white);
   text-transform: uppercase;
   margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.buy-button:hover {
+  background-color: var(--success);
+}
+
+.buy-button:active {
+  background-color: var(--buy-active);
 }
 
 .buy-button i {
@@ -931,6 +988,16 @@ header {
   color: var(--nav-color);
   text-transform: uppercase;
   border: 2px solid var(--basic-green);
+  border-radius: 2px;
+}
+
+.bookmark-button:hover {
+  border: 2px solid var(--nav-color);
+}
+
+.bookmark-button:active {
+  border: 2px solid var(--basic-greylight);
+  color: var(--basic-greylight);
 }
 
 .goods-actions {
@@ -1251,4 +1318,76 @@ header {
   width: 21px;
   height: 21px;
   background-image: url("../img/icon/insta.svg");
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light);
+  background-image: url("img/pattern-light.jpg");
+  background-repeat: repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+  display: block;
+}
+
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--basic-dark);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+
+.modal-login {
+  top: 120px;
+  bottom: auto;
+  width: 300px;
+  padding: 50px 80px;
+  background-color: var(--white);
+}
+
+.modal-login h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-description {
+  margin: 0;
+  margin-bottom: 10px;
 }
