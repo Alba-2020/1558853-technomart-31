@@ -1,94 +1,137 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
-    <header>
-      <div>
-        <a href="index.html">
-          ТЕХНОМАРТ
-        </a>
-        <a href="#">
-          Поиск
-        </a> 
-        <a href="#">
-          Закладки
-        </a> 
-        <a href="#">
-          Корзина
-        </a> 
-        <a href="#">
-          Оформить заказ
-        </a> 
-      </div>
-      <div>
-        <table>
-          <tr>
-            <td>Интернет-магазинстроительных материалови инструментов для ремонта</td>
-            <td>
-              <a href="tel:+78005558628">+7 800 555-86-28</a>
-              <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
-            </td>
-            <td>
-              <a href="#">Войти</a>
-              <a href="#">Регистрация</a>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="blank.html">Главная</a></li>
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="blank.html">Каталог</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      
-    </main>
-    <footer>
-      <div>
-        <a href="index.html">
-          ТЕХНОМАРТ
-        </a>
 
-        <ul>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="top-nav">
+      <div class="container container-flex">
+        <div>
+          <a class="logo" href="index.html">
+            Техномарт
+          </a>
+          <form method="post" action="#" class="search-form">
+            <label for="textField"></label>
+            <input type="text" name="text" id="textField" placeholder="Поиск">
+          </form>
+        </div>
+        <div>
+          <a href="#">
+            <i class="icon icon-bookmark"></i>
+            Закладки
+          </a><a href="#">
+            <i class="icon icon-busket"></i>
+            Корзина
+          </a><a class="checkout" href="#">
+            Оформить заказ
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-flex">
+      <p class="shop-description">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
+      <div class="contacts-block">
+        <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+      </div>
+
+      <div class="sign-block">
+        <a href="#">
+          <i class="icon icon-sign-in"></i>Войти
+        </a>
+        <a href="#">
+          <i class="icon icon-sign-up"></i>
+          Регистрация
+        </a>
+      </div>
+    </div>
+
+
+    <nav class="container site-navigation">
+      <a href="blank.html">Главная</a>
+      <a href="blank.html">Компания</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="blank.html">Новости</a>
+      <a href="blank.html">Спецпредложения</a>
+      <a href="blank.html">Доставка</a>
+      <a href="blank.html">Контакты</a>
+    </nav>
+  </header>
+  <main></main>
+  <footer class="main-footer">
+    <div class="container">
+      <div>
+        <a class="logo" href="index.html">
+          Техномарт
+        </a>
+        <ul class="footer-navigation">
           <li><a href="blank.html">Компания</a></li>
           <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="blank.html">Доставка</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
-        <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
-        <a href="tel:+78005558628">+7 800 555-86-28</a>
-        <ul>
+      </div>
+      <div class>
+        <div class>
+          <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
+        </div>
+        <ul class="footer-goods">
           <li><a href="blank.html">Материалы</a></li>
           <li><a href="blank.html">Техника</a></li>
           <li><a href="blank.html">Инструмент</a></li>
           <li><a href="blank.html">Спецпредложения</a></li>
         </ul>
       </div>
-      <div>
-        <p>© 2010–2021 Компания «Техномарт»Все права защищены</p>
-        <ul>
-          <li><a href="#">VK</a></li>
-          <li><a href="#">FB</a></li>
-          <li><a href="#">INST</a></li>
+    </div>
+    <div class="footer-contacts">
+      <div class="container">
+        <p>© 2010–2021 Компания «Техномарт»<br>Все права защищены</p>
+        <ul class="socials">
+          <li>
+            <a href="#">
+              <i class="icon icon-vk"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon icon-fb"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon icon-insta"></i>
+            </a>
+          </li>
         </ul>
-        <dl>
-          <dt>Обратная связь:</dt>
-          <dd><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></dd>
-          <dt>Разработано — </dt>
-          <dd><a href="https://htmlacademy.ru">htmlacademy.ru</a></dd>
-        </dl>
+        <div>
+          <p>Обратная связь:</p>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div>
+          <p>Разработано —</p>
+          <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+  
+</body>
+
 </html>
