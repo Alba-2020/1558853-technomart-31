@@ -31,6 +31,7 @@
   --toggle-color: #ABABAB;
   --buy-active: #518534;
   --checkbox-hover: #B5B5B5;
+  --background-submit: #F4F4F4;
 }
 
 html {
@@ -57,6 +58,7 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
+  vertical-align: middle;
 }
 
 address {
@@ -104,6 +106,7 @@ header {
 .icon {
   display: inline-block;
   background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 .top-nav {
@@ -152,6 +155,7 @@ header {
 .search-form {
   padding-left: 10px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .search-form label {
@@ -198,6 +202,7 @@ header {
 
 .sign-up {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   width: 121px;
   min-height: 45px;
@@ -252,6 +257,7 @@ header {
 
 .shop-description {
   display: inline-block;
+  vertical-align: middle;
   font-style: italic;
   color: var(--basic-red);
   font-size: 16px;
@@ -282,6 +288,7 @@ header {
 
 .sign-in {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   width: 121px;
   min-height: 45px;
@@ -301,6 +308,7 @@ header {
 
 .catalog-sign-block {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   background-color: var(--white);
   width: 299px;
@@ -355,6 +363,7 @@ header {
 .contacts-phone {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 270px;
   padding: 7px 55px;
   color: var(--basic-red);
@@ -660,6 +669,7 @@ header {
 
 .pagination li {
   display: inline-block;
+  vertical-align: middle;
   padding-right: 10px;
 }
 
@@ -694,6 +704,7 @@ header {
 .sorting li {
   text-decoration: none;
   display: inline-block;
+  vertical-align: middle;
   padding: 0px 40px;
 }
 
@@ -719,6 +730,7 @@ header {
 
 .features-button {
   display: inline-block;
+  vertical-align: middle;
   width: 135px;
   padding: 5px 10px;
   font-size: 14px;
@@ -1180,6 +1192,7 @@ header {
 
 .map {
   margin-bottom: 25px;
+  border: none;
 }
 
 .main-footer {
@@ -1325,3 +1338,56 @@ header {
   background-image: url("../img/icon/insta.svg");
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  color: var(--basic-black);
+  background-color: var(--white);
+  box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.15));
+  z-index: 10000;
+}
+
+.modal-feedback {
+  top: 120px;
+  bottom: auto;
+  width: 620px;
+  border-top: 7px solid var(--basic-red);
+}
+
+.feedback-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 37px 80px;
+}
+
+.message {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  position: relative;
+}
+
+.feedback-form input {
+  margin-top: 10px;
+  border: 2px solid var(--basic-greylight);
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.feedback-form .section-button
+{
+  width: 100%;
+  border: none;
+}
+
+.feedback-submit {
+  background-color: var(--background-submit);
+  padding: 37px 80px;
+}

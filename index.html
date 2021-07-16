@@ -218,7 +218,7 @@
           <div class="services-description">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно!<br/>
+              к вашему подъезду совершенно бесплатно!<br />
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!</p>
           </div>
@@ -246,7 +246,9 @@
           <div>
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1cb5127235c1524b66d9e346cf514f822397df8bd8f7e40c6b794ea29cafd846&amp;source=constructor" width="300" height="158" frameborder="0"></iframe>
+            <iframe class="map"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A1cb5127235c1524b66d9e346cf514f822397df8bd8f7e40c6b794ea29cafd846&amp;source=constructor"
+              width="300" height="158"></iframe>
             <br>
             <a class="section-button" href="#">Заблудились? Напишите нам!</a>
           </div>
@@ -312,7 +314,37 @@
       </div>
     </div>
   </footer>
-  
+  <section class="modal modal-feedback">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="feedback-inputs">
+        <div>
+          <label for="feedback-username">Ваше имя:</label>
+          <input class="feedback-username" id="feedback-username" type="text" name="user-name"
+            placeholder="Имя Фамилия">
+        </div>
+
+        <div>
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input class="feedback-useremail" id="feedback-email" type="email" name="e-mail"
+            placeholder="email@example.com">
+        </div>
+
+        <div class="message">
+          <label for="feedback-message">Текст письма:</label>
+       
+          <input class="feedback-message" id="feedback-message" type="text" name="message"
+            placeholder="В свободной форме">
+          
+        </div>
+      </div>
+      <div class="feedback-submit">
+        <button class="section-button" type="submit">Отправить</button>
+      </div>
+    </form>
+
+  </section>
+
+
 </body>
 
 </html>
