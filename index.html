@@ -19,27 +19,23 @@
 <body>
   <header>
     <div class="top-nav">
-      <div class="container container-flex">
-        <div>
-          <a class="logo" href="index.html">
-            Техномарт
-          </a>
-          <form method="post" action="#" class="search-form">
-            <label for="textField"></label>
-            <input type="text" name="text" id="textField" placeholder="Поиск">
-          </form>
-        </div>
-        <div>
-          <a href="#">
-            <i class="icon icon-bookmark"></i>
-            Закладки
-          </a><a href="#">
-            <i class="icon icon-busket"></i>
-            Корзина
-          </a><a class="checkout" href="#">
-            Оформить заказ
-          </a>
-        </div>
+      <div class="container">
+        <a class="logo" href="index.html">
+          Техномарт
+        </a>
+        <form method="post" action="#" class="search-form">
+          <input type="text" name="text" id="textField" placeholder="Поиск">
+          <label for="textField"><i class="icon icon-search"></i></label>
+        </form>
+        <a href="#">
+          <i class="icon icon-bookmark"></i>
+          Закладки
+        </a><a href="#">
+          <i class="icon icon-busket"></i>
+          Корзина
+        </a><a class="checkout" href="#">
+          Оформить заказ
+        </a>
       </div>
     </div>
 
@@ -63,7 +59,7 @@
 
 
     <nav class="container site-navigation">
-      <a href="blank.html">Главная</a>
+      <a href="index.html">Главная</a>
       <a href="blank.html">Компания</a>
       <a href="catalog.html">Каталог</a>
       <a href="blank.html">Новости</a>
@@ -98,35 +94,30 @@
         </div>
         <section class="slider">
           <ul class="slider-list">
-            <li class="slider-item slide slide-current">
-          <div class="slider-header">
-            <h2>Перфораторы</h2>
-            <div>Настоящие мужские игрушки</div>
-          </div>
-          <img src="img/slider/perforator.jpg" width="620" height="266" alt="Перфораторы">
-          <a href="#">
-            <i class="icon icon-left"></i>
-          </a>
-          <a href="#">
-            <i class="icon icon-right"></i>
-          </a>
-          <a class="section-button" href="blank.html">Открыть каталог</a>
-          </li>
-          <li class="slider-item slide slide">
-            <div class="slider-header">
-              <h2>Дрели</h2>
-              <div>Соседям на радость!</div>
-            </div>
-            <img src="img/slider/dreli.jpg" width="620" height="266" alt="Перфораторы">
-            <a href="#">
+            <li class="slider-item slide-current">
+              <div class="slider-header">
+                <h2>Перфораторы</h2>
+                <div>Настоящие мужские игрушки</div>
+              </div>
+              <img src="img/slider/perforator.jpg" width="620" height="266" alt="Перфораторы">
+            </li>
+            <li class="slider-item">
+              <div class="slider-header">
+                <h2>Дрели</h2>
+                <div>Соседям на радость!</div>
+              </div>
+              <img src="img/slider/dreli.jpg" width="620" height="266" alt="Перфораторы">
+            </li>
+          </ul>
+          <div class="slide-buttons">
+            <a href="#" class="slider-left-button">
               <i class="icon icon-left"></i>
             </a>
-            <a href="#">
+            <a href="#" class="slider-right-button">
               <i class="icon icon-right"></i>
             </a>
             <a class="section-button" href="blank.html">Открыть каталог</a>
-            </li>
-        </ul>
+          </div>
         </section>
         <div class="feature discounts">
           <div>
@@ -350,9 +341,9 @@
 
         <div class="message">
 
-          
+
           <label for="feedback-message">Текст письма:</label>
-       
+
           <textarea class="message-text"></textarea>
         </div>
       </div>

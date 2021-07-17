@@ -19,27 +19,23 @@
 <body>
   <header>
     <div class="top-nav">
-      <div class="container container-flex">
-        <div>
-          <a class="logo" href="index.html">
-            Техномарт
-          </a>
-          <form method="post" action="#" class="search-form">
-            <label for="textField"></label>
-            <input type="text" name="text" id="textField" placeholder="Поиск">
-          </form>
-        </div>
-        <div>
-          <a href="#">
-            <i class="icon icon-bookmark"></i>
-            Закладки
-          </a><a class="current-busket" href="#">
-            <i class="icon icon-busket"></i>
-            Корзина
-          </a><a class="checkout" href="#">
-            Оформить заказ
-          </a>
-        </div>
+      <div class="container">
+        <a class="logo" href="index.html">
+          Техномарт
+        </a>
+        <form method="post" action="#" class="search-form">
+          <input type="text" name="text" id="textField" placeholder="Поиск">
+          <label for="textField"><i class="icon icon-search"></i></label>
+        </form>
+        <a href="#">
+          <i class="icon icon-bookmark"></i>
+          Закладки
+        </a><a href="#" class="current-busket">
+          <i class="icon icon-busket"></i>
+          Корзина
+        </a><a class="checkout" href="#">
+          Оформить заказ
+        </a>
       </div>
     </div>
     <div class="container container-flex">
@@ -62,7 +58,7 @@
     </div>
 
     <nav class="site-navigation container container-flex">
-      <a href="blank.html">Главная</a>
+      <a href="index.html">Главная</a>
       <a href="blank.html">Компания</a>
       <a href="catalog.html">Каталог</a>
       <a href="blank.html">Новости</a>
@@ -108,11 +104,16 @@
           </fieldset>
           <fieldset class="filters-field">
             <legend>Производители:</legend>
-            <input  class="visually-hidden" type="checkbox" name="brand" checked value="BOSCH" id="filter-bosch"> <label for="filter-bosch">BOSCH</label>
-            <input  class="visually-hidden" type="checkbox" name="brand" value="ИНТЕРСКОЛ" id="filter-interskol"> <label for="filter-interskol">ИНТЕРСКОЛ</label>
-            <input  class="visually-hidden" type="checkbox" name="brand" checked value="MAKIta" id="filter-makita"> <label for="filter-makita">MAKIta</label>
-            <input  class="visually-hidden" type="checkbox" name="brand" value="Dewalt" id="filter-dewalt"> <label for="filter-dewalt">Dewalt</label>
-            <input  class="visually-hidden" type="checkbox" name="brand" value="Hitachi" id="filter-hitachi"> <label for="filter-hitachi">Hitachi</label>
+            <input class="visually-hidden" type="checkbox" name="brand" checked value="BOSCH" id="filter-bosch"> <label
+              for="filter-bosch">BOSCH</label>
+            <input class="visually-hidden" type="checkbox" name="brand" value="ИНТЕРСКОЛ" id="filter-interskol"> <label
+              for="filter-interskol">ИНТЕРСКОЛ</label>
+            <input class="visually-hidden" type="checkbox" name="brand" checked value="MAKIta" id="filter-makita">
+            <label for="filter-makita">MAKIta</label>
+            <input class="visually-hidden" type="checkbox" name="brand" value="Dewalt" id="filter-dewalt"> <label
+              for="filter-dewalt">Dewalt</label>
+            <input class="visually-hidden" type="checkbox" name="brand" value="Hitachi" id="filter-hitachi"> <label
+              for="filter-hitachi">Hitachi</label>
           </fieldset>
           <fieldset class="filters-field">
             <legend>Питание:</legend>
