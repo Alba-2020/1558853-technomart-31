@@ -24,8 +24,8 @@
   --hover-red: #CA2C37;
   --filters-color: #F7F3EC;
   --filters-button: #E5E5E5;
-  --font-main: 'Cuprum', sans-serif;
-  --font-secondary: 'PT Sans', sans-serif;
+  --font-main: "Cuprum", Arial, sans-serif;
+  --font-secondary: "PT Sans", Arial, sans-serif;
   --dark-red: #c33;
   --socials-background: #212A3A;
   --toggle-color: #ABABAB;
@@ -150,7 +150,7 @@ header {
   font-size: 24px;
 }
 
-.top-nav>.container-flex>div>.logo:active {
+.top-nav .logo:active {
   background-color: var(--active-red);
 }
 
@@ -222,7 +222,7 @@ header {
   margin-right: 8px;
 }
 
-.contacts-block>.contacts-phone>address {
+.contacts-block address {
   font-family: var(--font-main);
   font-size: 14px;
   font-style: normal;
@@ -433,6 +433,16 @@ header {
 .breadcrumbs {
   display: flex;
   margin-top: 20px;
+}
+
+.icon-home {
+  background-image: url("../img/icon/home.svg");
+  width: 14px;
+  height: 16px;
+}
+
+.icon-home:hover {
+  filter: brightness(0.5);
 }
 
 .breadcrumbs a {
@@ -834,6 +844,35 @@ header {
   display: block;
 }
 
+.slide-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-pages {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.slider-pages > li {
+  display: inline-block;
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.slider-pages > .current {
+  background-color: var(--basic-red);
+}
+
 .slider-left-button {
   position: absolute;
   top: 45%;
@@ -850,6 +889,7 @@ header {
   position: absolute;
   bottom: 20px;
   left: 20px;
+  padding: 10px 40px;
 }
 
 .icon-left {
@@ -908,14 +948,17 @@ header {
   line-height: 18px;
   color: var(--white);
   text-transform: uppercase;
+  border: none;
 }
 
 .section-button:hover {
   background-color: var(--hover-red);
+  border: none;
 }
 
 .section-button:active {
   background-color: var(--active-red);
+  border: none;
 }
 
 .goods-list {
@@ -1222,7 +1265,7 @@ header {
 }
 
 .transport-list>li::before {
-  content: '—';
+  content: "—";
   color: var(--basic-red);
   margin-right: 10px;
   vertical-align: text-bottom;
@@ -1232,6 +1275,9 @@ header {
 .map {
   margin-bottom: 25px;
   border: none;
+  width: 300px;
+  height: 158px;
+  background-image: url("../img/other/map.jpg");
 }
 
 .main-footer {
@@ -1379,32 +1425,29 @@ header {
 
 .modal {
   position: fixed;
-  top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   margin: auto;
   display: none;
   color: var(--basic-black);
   background-color: var(--white);
-  box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  top: 120px;
+  bottom: auto;
+  width: 620px;
+  border-top: 7px solid var(--basic-red);
   z-index: 10000;
 }
 
 .modal-close {
   position: absolute;
-  right: 0px;
+  right: 10px;
+  top: 10px;
   width: 21px;
   height: 21px;
+  background-color: transparent;
   background-image: url("../img/icon/cross.svg");
   border: none;
-}
-
-.modal-feedback {
-  top: 120px;
-  bottom: auto;
-  width: 620px;
-  border-top: 7px solid var(--basic-red);
 }
 
 .modal-show {
@@ -1422,7 +1465,7 @@ header {
 .feedback-inputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   gap: 20px;
   padding: 37px 80px;
 }
@@ -1433,7 +1476,7 @@ header {
   position: relative;
 }
 
-.feedback-form input {
+.feedback-form input, .feedback-form textarea {
   margin-top: 10px;
   border: 2px solid var(--basic-greylight);
   padding: 5px 10px;
@@ -1453,6 +1496,48 @@ header {
 
 .modal-error {
   animation: shake 0.6s;
+}
+
+.modal-basket {
+  text-align: center;
+}
+
+.basket-actions {
+  background-color: var(--background-submit);
+  text-align: center;
+  padding: 37px 80px;
+}
+
+.basket-actions>.section-button {
+  padding: 10px 47px;
+}
+
+.basket-actions>.continue-button {
+  background-color: var(--white);
+  color: var(--basic-black);
+  margin-left: 5px;
+}
+
+.add-busket-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 50px auto;
+}
+
+.add-busket-text::before {
+  content: url("../img/icon/mark.svg");
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.modal-map {
+  width: 940px;
+}
+
+.modal-map iframe {
+  border: none;
+  background-image: url("../img/other/map-big.jpg");
 }
 
 @keyframes bounce {

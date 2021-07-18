@@ -20,7 +20,7 @@
   <header>
     <div class="top-nav">
       <div class="container">
-        <a class="logo" href="index.html">
+        <a class="logo" href="#">
           Техномарт
         </a>
         <form method="post" action="#" class="search-form">
@@ -59,7 +59,7 @@
 
 
     <nav class="container site-navigation">
-      <a href="index.html">Главная</a>
+      <a href="#">Главная</a>
       <a href="blank.html">Компания</a>
       <a href="catalog.html">Каталог</a>
       <a href="blank.html">Новости</a>
@@ -116,7 +116,11 @@
             <a href="#" class="slider-right-button">
               <i class="icon icon-right"></i>
             </a>
-            <a class="section-button" href="blank.html">Открыть каталог</a>
+            <ul class="slider-pages">
+              <li class="current"></li>
+              <li></li>
+            </ul>
+            <a class="section-button" href="catalog.html">Открыть каталог</a>
           </div>
         </section>
         <div class="feature discounts">
@@ -255,10 +259,9 @@
           <div>
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <iframe class="map"
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A1cb5127235c1524b66d9e346cf514f822397df8bd8f7e40c6b794ea29cafd846&amp;source=constructor"
-              width="300" height="158"></iframe>
-            <br>
+            <a class="map" href="#">
+              <img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aa85e0bbfcefc0e6145d40fb476b900090954092c2c310d3e75c0acf07d1fc319&amp;width=300&amp;height=158&amp;lang=ru_RU" alt=""/>
+            </a>
             <button class="section-button get-lost" type="button">Заблудились? Напишите нам! </button>
           </div>
         </div>
@@ -268,7 +271,7 @@
   <footer class="main-footer">
     <div class="container">
       <div>
-        <a class="logo" href="index.html">
+        <a class="logo" href="#">
           Техномарт
         </a>
         <ul class="footer-navigation">
@@ -318,13 +321,13 @@
         </div>
         <div>
           <p>Разработано —</p>
-          <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </div>
       </div>
     </div>
   </footer>
   <section class="modal modal-feedback">
-    <button class="modal-close" type="button"></button>
+    <a href="#" class="modal-close" type="button"></a>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="feedback-inputs">
         <div>
@@ -332,18 +335,13 @@
           <input class="feedback-username" id="feedback-username" type="text" name="user-name"
             placeholder="Имя Фамилия">
         </div>
-
         <div>
           <label for="feedback-email">Ваш e-mail:</label>
           <input class="feedback-useremail" id="feedback-email" type="email" name="e-mail"
             placeholder="email@example.com">
         </div>
-
         <div class="message">
-
-
           <label for="feedback-message">Текст письма:</label>
-
           <textarea class="message-text"></textarea>
         </div>
       </div>
@@ -351,14 +349,13 @@
         <button class="section-button" type="submit">Отправить</button>
       </div>
     </form>
-
+  </section>
+  <section class="modal modal-map">
+    <a href="#" class="modal-close" type="button"></a>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa85e0bbfcefc0e6145d40fb476b900090954092c2c310d3e75c0acf07d1fc319&amp;source=constructor" width="100%" height="450"></iframe>
   </section>
   <script src="js/script.js">
-
   </script>
-
-
-
 </body>
 
 </html>
